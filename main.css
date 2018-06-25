@@ -59,7 +59,7 @@ h5 {
 }
 
 .logotopbg > h1 {
-    font-size: 4em;
+    font-size: 7vw;
     padding-top: 10px;
     padding-bottom: -10px;
 
@@ -267,7 +267,7 @@ h2 {
 
 .gridimgs { 
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(500px, max-width));
     grid-gap: 0px;
     align-items: stretch;
   }
