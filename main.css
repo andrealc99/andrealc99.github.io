@@ -267,13 +267,19 @@ h2 {
 
 .gridimgs { 
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, max-width));
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     grid-gap: 0px;
     align-items: stretch;
   }
+
+  @media screen and (max-width: 500px){
+    .gridimgs { 
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
   
 .gridimgs img {
-    max-width: 100%;
+    width: 100%;
   }
 
 .gridimgs > a:hover {
